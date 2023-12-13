@@ -1,0 +1,14 @@
+.newproduct-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 1rem;
+    border-top: 1px solid rgba(219, 213, 213, 0.345);
+    padding: 2rem 0rem 2rem 0rem;
+}
+.newproducts-heading{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+}

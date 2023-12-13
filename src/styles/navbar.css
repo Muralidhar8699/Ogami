@@ -1,0 +1,59 @@
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4rem 0rem;
+}
+.navbar-container-logo{
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+.navbar-search-container{
+    border: 1px solid rgba(207, 204, 204, 0.149);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10rem;
+}
+.navbar-searchbar input{
+    border: 0;
+    outline: 0;
+    font-size: 1.2rem;
+    padding: .8rem 1rem ;
+    width: 25rem;
+}
+.navabar-allcategories select{
+    border: 0;
+    outline: 0;
+    border-right: 1px solid rgba(206, 200, 200, 0.394);
+    font-size: 1rem;
+    padding: .5rem 1rem ;
+}
+.navbar-searchicon{
+    font-size: 1.3rem;
+    padding: .8rem 1rem ;
+    background-color: rgb(109, 173, 13);
+    color: white;
+}
+.navbar-home{
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: flex;
+    gap: 3rem;
+    margin-right: 5rem;
+}
+.navbar-aboutus{
+    color: green;
+    display: flex;
+    gap: 2rem;
+    margin-right: 2rem;
+}
+.navbar-cart{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    gap: 1.5rem;
+    margin-right: 2rem;
+}

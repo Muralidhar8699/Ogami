@@ -1,0 +1,24 @@
+.bestsellers-container{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    border-top: 1px solid rgba(223, 219, 219, 0.422);
+    padding-top: 1rem;
+}
+.bestsellers-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-right: 2rem;
+}
+.bestsellers-heading h1{
+    font-size: 2.7rem;
+    margin-left: 3rem;
+}
+.bestsellers-list{
+    color: rgb(159, 155, 155);
+    font-weight: 600;
+    cursor: pointer;
+    gap: 2rem;
+    display: flex;
+}
