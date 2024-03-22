@@ -38,6 +38,7 @@
     letter-spacing: .1rem;
     font-weight: 600;
     font-size: 4rem;
+    color: rgb(17, 222, 17);
 }
 .text span:nth-child(3){
     letter-spacing: .1rem;
