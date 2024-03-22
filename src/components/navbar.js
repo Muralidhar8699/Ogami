@@ -3,13 +3,12 @@ import {LiaSearchSolid} from "react-icons/lia";
 import {AiOutlineHeart} from "react-icons/ai";
 import {BsBagDash} from "react-icons/bs";
 import { Link } from "react-router-dom";
-import CartPage from "./cartpage";
 
 export default function Navbar(props) {
     return(
         <div className="navbar-container">
           <div className="navbar-container-logo">
-            <img src="https://ogami-react.vercel.app/assets/images/logo.png"/>
+            <img alt="logo" src="https://ogami-react.vercel.app/assets/images/logo.png"/>
           </div>
           <div className="navbar-search-container">
             <span className="navabar-allcategories">

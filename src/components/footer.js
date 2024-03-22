@@ -9,7 +9,7 @@ export default function Footer(){
         <div className="footer-container">
             <div className="footer-div1">
               <span className="footer-logo"> 
-                <img src="https://ogami-react.vercel.app/assets/images/logo.png"/>
+                <img alt="logo" src="https://ogami-react.vercel.app/assets/images/logo.png"/>
               </span>
               <span className="footer-adress-div">
                 <span>Address: 60-49 Road 11378 New York</span>

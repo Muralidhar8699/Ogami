@@ -29,16 +29,16 @@ export default function banner() {
               <BiLogoPinterestAlt className="facebook"/>
             </span>
             <select className="banner-right-lang">
-                <img src="https://ogami-react.vercel.app/assets/images/header/flag-usa.png"/>
+                <img alt="logo" src="https://ogami-react.vercel.app/assets/images/header/flag-usa.png"/>
               <option>
                 English
               </option>
               <option>
-                <img src="https://ogami-react.vercel.app/assets/images/header/flag-usa.png"/>
+                <img alt="logo" src="https://ogami-react.vercel.app/assets/images/header/flag-usa.png"/>
                 japan
               </option>
               <option>
-                <img src="https://ogami-react.vercel.app/assets/images/header/flag-usa.png"/>
+                <img alt="logo" src="https://ogami-react.vercel.app/assets/images/header/flag-usa.png"/>
                 Vietnam
               </option>
             </select>

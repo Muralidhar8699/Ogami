@@ -3,12 +3,12 @@ import Navbar from "../components/navbar.js";
 import "../styles/cartpage.css"
 import { ogamiReactBaseUrl } from "../utils/api.js";
 import { Addtocart, deletecart, deleteproduct, removefromcart } from "../utils/cart.js";
-export default function CartPage(props){
-    
-    return(
+export default function CartPage(props) {
+
+    return (
         <div className="cartpage-main-div">
-            <Banner/>
-            <Navbar cart={props.cart}/>
+            <Banner />
+            <Navbar cart={props.cart} />
             <div className="cartpage-arrows-container">
                 <span className="shoppingcart-container">
                     <span className="white-square"></span>
@@ -37,30 +37,30 @@ export default function CartPage(props){
                     <span className="cartpage-text">PRICE</span>
                     <span className="cartpage-text">QUANTITY</span>
                     <span className="cartpage-text">TOTAL</span>
-                    <button className="cartpage-btn" onClick={()=>props.setcount(deletecart())}>X</button>
+                    <button className="cartpage-btn" onClick={() => props.setcount(deletecart())}>X</button>
                 </div>
                 <div>
-                    {props?.cart?.products?.map((e,index)=>{
+                    {props?.cart?.products?.map((e, index) => {
                         // e.preventDefault()
                         let price = e.price;
-                        if(e.discount) price -= e.discount;
-                        return(
-                            <div className="cartpage-product-price-details" key = {index}>
-                            
-                                <img className="cartpage-product-images" src={ogamiReactBaseUrl+e?.images[0]}/>
-                                <span>{e?.name}</span> 
+                        if (e.discount) price -= e.discount;
+                        return (
+                            <div className="cartpage-product-price-details" key={index}>
+
+                                <img alt="logo" className="cartpage-product-images" src={ogamiReactBaseUrl + e?.images[0]} />
+                                <span>{e?.name}</span>
                                 <span>{e.discount && <p>${e.price - e.discount}</p>}
-                                        {!e.discount && <p>${e.price}</p>}
-                                </span> 
+                                    {!e.discount && <p>${e.price}</p>}
+                                </span>
                                 <span className="quatity-span">
-                                        <span className="quantity-value">{e?.productQty}</span> 
+                                    <span className="quantity-value">{e?.productQty}</span>
                                     <span className="plus-minus-btn-span">
-                                        <button className="increase-btn" onClick={()=>props.setcount(Addtocart(props.cart,e))}>+</button>
-                                        <button className="decrease-btn" onClick={()=>props.setcount(removefromcart(props.cart,e))}>-</button>
+                                        <button className="increase-btn" onClick={() => props.setcount(Addtocart(props.cart, e))}>+</button>
+                                        <button className="decrease-btn" onClick={() => props.setcount(removefromcart(props.cart, e))}>-</button>
                                     </span>
-                                </span> 
-                                    <span>{(e?.productQty*price).toFixed(2)}</span>
-                                <button onClick={()=>props.setcount(deleteproduct(props.cart,e))}>X</button>
+                                </span>
+                                <span>{(e?.productQty * price).toFixed(2)}</span>
+                                <button onClick={() => props.setcount(deleteproduct(props.cart, e))}>X</button>
                             </div>
                         )
                     })}

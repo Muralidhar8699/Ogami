@@ -6,7 +6,7 @@ export default function Card(props) {
         <div className="card-main-container">
             <Link to = {"/" + props.product.slug}>
                 <div  className="cards-container" >
-                    <img className="card-img" src={"https://ogami-react.vercel.app/" + props.product.coverImage}/>
+                    <img alt="logo" className="card-img" src={"https://ogami-react.vercel.app/" + props.product.coverImage}/>
                     <p className="card-product-category">{props.product.category}</p>
                     <p className="card-product-name">{props.product.name}</p>
                     <p className="card-product-price">{"$"+props.product.price.toFixed(2)}</p>
